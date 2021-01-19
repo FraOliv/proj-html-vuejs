@@ -164,7 +164,7 @@ nav img {
 
 /* MAIN */
 main {
-  background-color:cadetblue
+  background-color:white
 }
 
 .Awards{
@@ -175,6 +175,10 @@ main {
     text-align: center;
 
     background-image: url("../img/avadabarbers-about-introbackground.jpg");
+}
+.container-awards{
+
+      margin-top: 25px;
 }
 
 .Awards p{
@@ -189,13 +193,90 @@ main {
 }
 
 .Services {
-  height: 400px;
-  background-color:#383d6d
+ margin: 0 20%;
+}
+body > main > section.Services > div.upper-text > span{
+  color: #ae8652;
+  font-weight: 600;
+  font-size: 35px;
 }
 
-.Products {
-  height: 400px;
-  background-color: PURPLE
+.Services h2{
+  color: #b0b0b0;
+    font-weight: 600;
+    font-size: 75px;
+}
+.Services p{
+  text-align: center;
+}
+.upper-text{
+    text-align: center;
+    padding: 0px 0 50px 0 ;
+}
+.container-services{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px ;
+}
+.container-services img{
+    width: 100px;
+    max-height: 140px;
+}
+.barber-box, .box-service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px;
+}
+
+.barber-box h3, .box-service h3{
+    padding: 25px 0;
+    font-size: 2.2rem;
+    color: #ae8652;
+    text-transform: capitalize;
+}
+.barber-box p{
+    text-align: center;
+    color: #818181;
+}
+#soap h3{
+    padding: 35px 0 25px 0 ;
+}
+.container-button_services{
+    text-align: center;
+}
+#triangle_black{
+     border-color: transparent transparent #141414 transparent;
+}
+
+
+/* products */
+.Products{
+    text-align: center  ;
+    background-image: url("../img/avadabarbers-reviewsbackground.jpg");
+    background-size: cover;
+    background-position: top;
+                /* debug */
+ 
+    border: 1px solid rgb(75, 250, 75);
+    height:   65vh;
+}
+body > main > section.Products > div.upper-text > span{
+      color: #ae8652;
+
+}
+.Products h2{
+  font-size: 50px;
+  color:#b0b0b0;
+}
+.container-products{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 60px;
+}
+.barber-box span{
+    font-size: 1.3rem;
+    color: #ae8652;
 }
 
 .Reviews {
