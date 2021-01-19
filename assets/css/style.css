@@ -153,10 +153,17 @@ nav img {
 .trentanove {
   font-size: 1.5rem;
 }
+.triangle{
+    margin-top: 100px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 1200px 200px 1200px;
+    border-color: transparent transparent #ffffff transparent;
+}
 
 /* MAIN */
 main {
-  /* debug */
   background-color:cadetblue
 }
 
@@ -166,7 +173,7 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 50px;
+
     background-image: url("../img/avadabarbers-about-introbackground.jpg");
 }
 
@@ -182,30 +189,25 @@ main {
 }
 
 .Services {
-  /* debug */
   height: 400px;
   background-color:#383d6d
 }
 
 .Products {
-  /* debug */
   height: 400px;
   background-color: PURPLE
 }
 
 .Reviews {
-  /* debug */
   height: 400px;
   background-color: red
 }
 
 .Blog {
-  /* debug */
   height: 400px;
   background-color: GOLD;
 }
 
 footer {
-  /* debug */
   height: 400px;
   background-color: blue;
