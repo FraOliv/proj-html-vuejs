@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Archivo Narrow', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 img {
@@ -21,7 +22,7 @@ h6 {
 
 /* HEADER */
 header {
-  padding: 20px 0 50px;
+  padding: 20px 0 ;
   background-image: url("../img/avadabarbers-homepage-hero-bg.jpg");
   background-size: cover;
   background-position: center;
@@ -38,13 +39,14 @@ nav {
 }
 
 nav img {
-  width: 100px;
+  width: 150px;
 }
 
 
 .shop-burger {
   display: flex;
   cursor: pointer;
+  position: relative;
 }
 
 .menu-hamburger div {
@@ -53,6 +55,35 @@ nav img {
   width: 15px;
   border: 1px solid #b0b0b0;
 }
+.menuDropdown{
+    position: absolute;
+    width: 130px;
+    padding: 10px;
+    font-size: 1.2rem;
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid #b0b0b0;
+    border-radius: 10px;
+    list-style: none;
+    top: 15px;
+}
+.menuDropdown li {
+    padding: 5px;
+}
+.menuDropdown a{
+    color:  #818181;
+    width: 100px;
+    font-size: 1.2rem;
+    padding-left: 10px
+}
+.menuDropdown li:hover a{
+    transition: 0.2s;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 20px;
+    border-left: 2px solid #ae8652;
+}
+
 
 
 /* jumbo section */
@@ -62,7 +93,7 @@ nav img {
   padding-left: 20%;
 }
 
-#jumbo-decription h1 {
+.jumbo-decription h1 {
   padding: 300px 0 20px 0;
   font-size: 80px;
   color: #eae8e6;
@@ -76,7 +107,7 @@ nav img {
   border-radius: 50px;
 }
 
-#jumbo-decription p {
+.jumbo-decription p {
   padding: 20px 0 30px;
   color: #505050
 }
@@ -92,7 +123,7 @@ nav img {
   flex-direction: column;
 }
 
-#minibox {
+.minibox {
   margin: 5px;
   width: 50px;
   height: 50px;
@@ -115,11 +146,11 @@ nav img {
   color: rgb(5, 184, 5);
 }
 
-#dollar {
+.dollar {
   font-size: 0.7rem;
 }
 
-#trentanove {
+.trentanove {
   font-size: 1.5rem;
 }
 
@@ -129,10 +160,25 @@ main {
   background-color:cadetblue
 }
 
-.Awards {
-  /* debug */
-  height: 400px;
-  background-color: darkgreen;
+.Awards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    background-image: url("../img/avadabarbers-about-introbackground.jpg");
+}
+
+.Awards p{
+    color: #ae8652;
+    text-transform: uppercase;
+}
+
+.Awards h2{
+    padding: 20px 0 30px 0;
+    font-size: 50px;
+    color: #b0b0b0;
 }
 
 .Services {

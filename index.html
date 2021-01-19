@@ -32,7 +32,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,100;1,300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <!--  GOOGLE FONT LOBSTER -->
 
@@ -54,17 +54,23 @@
           <div class="shop-burger">
             <i class="fas fa-shopping-cart"></i>
 
-            <div class="menu-hamburger">
+            <div class="menu-hamburger" @click="drop = !drop">
               <div></div>
               <div></div>
               <div></div>
             </div>
+            <ul class="menuDropdown" v-if="drop">
+              <li v-for="contact in menuDropdown">
+                <a href="">{{contact}}</a>
+
+              </li>
+            </ul>
           </div>
         </nav>
 
         <!-- jumbotron -->
         <section class="jumbo">
-          <div id="jumbo-decription">
+          <div class="jumbo-decription">
             <h1>Barber Shop</h1>
             <div class="line"></div>
             <p>The Pinnacle Of Male Grooming</p>
@@ -75,13 +81,13 @@
           </div>
 
           <div class="white_minibox">
-            <div id="minibox">
+            <div class="minibox">
               <i class="fas fa-folder-plus"></i>
               <span>Demos</span>
             </div>
-            <div id="minibox">
+            <div class="minibox">
               <div class="price">
-                <span id="dollar">$</span><span id="trentanove"><strong>39</strong></span>
+                <span class="dollar">$</span><span class="trentanove"><strong>39</strong></span>
               </div>
               <span>On Sale</span>
             </div>
@@ -91,47 +97,51 @@
   </header>
 
 
-        <!--  Main  -->
-        <main>
-            <!-- awards -->
-            <section class="Awards">
-            </section>
+  <!--  Main  -->
+  <main>
+    <!-- awards -->
+    <section class="Awards">
+      <div class="container-awards">
+        <p>Award Winning</p>
+        <h2>Pro Barbers</h2>
+        <span class="button"> meet your new barber</span>
+      </div>
+    </section>
 
-            <!-- services -->
-            <section class="Services">
-            </section>
+    <!-- services -->
+    <section class="Services">
+    </section>
 
-            <!-- products -->
-            <section class="Products">
-            </section>
+    <!-- products -->
+    <section class="Products">
+    </section>
 
-            <!-- review -->
-            <section class="Reviews">
-            </section>
+    <!-- review -->
+    <section class="Reviews">
+    </section>
 
-            <!-- blog -->
-            <section class="Blog">
-            </section>
-        </main>
-
-
-                    <!--  Footer -->
-        <footer>
-            <!-- shop -->
-            <div class="shop">
-            </div>
-
-            <!-- contact -->
-            <div class="Contacts">
-            </div>
-
-            <!-- appointment -->
-            <div class="reservation">
-            </div>
-        </footer>
+    <!-- blog -->
+    <section class="Blog">
+    </section>
+  </main>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  <!--  Footer -->
+  <footer>
+    <!-- shop -->
+    <div class="shop">
+    </div>
+
+    <!-- contact -->
+    <div class="Contacts">
+    </div>
+
+    <!-- appointment -->
+    <div class="reservation">
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script> <!-- VUE -->
   <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 
