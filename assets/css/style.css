@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #0f1214;
+}
+h2{
+  font-weight: bold ;
+}
+
+.logo{
+    margin-left: 10%;
+}
+
+.flex {
+  display: flex;
+}
+.column {
+  flex-direction: column;
+}
+.navleft {
+  height: 80px;
+  width: 50%;
+  background-color: #080808;
+  float: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flag{
+  font-size: 25px;
+}
+
+.navleft h1 {
+  color: red;
+  font-family: arial;
+  font-size: 30px;
+  margin-left: 10%;
+}
+
+.navright {
+  height: 80px;
+  width: 50%;
+  background-color: #080808;
+  float: left;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navright i {
+  height: 60%;
+  width: 50px;
+  font-size: 30px;
+  padding-top: 10px;
+  background-color: white;
+  color: lightgrey;
+  margin-right: 10%;
+  display: flex;
+  justify-content: center;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+}
+
+.navright i:hover {
+  cursor: pointer;
+}
+
+.container{
+  width: 100vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie_card {
+
+   
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 25px;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #343A40;
+  color: white;
+  flex-wrap: wrap;
+  min-width: 400px;
+  position: relative;
+  border: 2px solid white;
+  
+
+  
+  
+}
+
+.searchbar {
+  height: 60%;
+  width: 15%;
+  border: transparent;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+   background-color: #343A40;
+   border-radius: 5%;
+   border: 2px solid white;
+   padding: 15px
+
+
+}
+
+
+.movie_card:hover .poster {
+  opacity: 0.1;
+  overflow-y: hidden;
+  transition: 1s;
+   transform: scale(1.1);
+   
+}
+
+
+.movie_card:hover .info {
+  color: white;
+  opacity: 1;
+  overflow-x: hidden;
+  transition: 1s;
+   transform: scale(1.1);
+  
+
+
+}
+.star{
+     color: yellow;
+     margin-left: 31%;
+     font-size: 26px;
+ }
+
+
+.fas fa-star{
+  font-size: 200px;
+}
+.overview{
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+::-webkit-scrollbar-thumb {
+  background: #403a3a;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #827d7d;
+}
+::-webkit-scrollbar-track {
+  background: #221f1f;
+  border-radius: 10px;
+}
