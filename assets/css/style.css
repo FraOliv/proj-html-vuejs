@@ -47,26 +47,14 @@ nav img {
   cursor: pointer;
 }
 
-.burger div {
+.menu-hamburger div {
   /* height: px; */
   margin: 2px 0px 2px 10px;
   width: 15px;
   border: 1px solid #b0b0b0;
 }
 
-.button{
-      padding: 10px 15px;
-      color: #ae8652;
-      border: 1px solid #ae8652;
-}
 
-.line{
-
-      width: 200px;
-      height: 2px;
-      border: 1px solid #ae8652;
-      border-radius: 50px;
-}
 /* jumbo section */
 .jumbo {
   display: flex;
@@ -80,6 +68,98 @@ nav img {
   color: #eae8e6;
 
 }
+
+.line {
+  width: 200px;
+  height: 2px;
+  border: 1px solid #ae8652;
+  border-radius: 50px;
+}
+
 #jumbo-decription p {
   padding: 20px 0 30px;
-  color: #505050;
+  color: #505050
+}
+
+.button {
+  padding: 10px 15px;
+  color: #ae8652;
+  border: 1px solid #ae8652;
+}
+
+.white_minibox {
+  display: flex;
+  flex-direction: column;
+}
+
+#minibox {
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #383d6d;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.fa-folder-plus {
+  padding-top: 5px;
+  font-size: 1.5rem;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: rgb(5, 184, 5);
+}
+
+#dollar {
+  font-size: 0.7rem;
+}
+
+#trentanove {
+  font-size: 1.5rem;
+}
+
+/* MAIN */
+main {
+  /* debug */
+  background-color:cadetblue
+}
+
+.Awards {
+  /* debug */
+  height: 400px;
+  background-color: darkgreen;
+}
+
+.Services {
+  /* debug */
+  height: 400px;
+  background-color:#383d6d
+}
+
+.Products {
+  /* debug */
+  height: 400px;
+  background-color: PURPLE
+}
+
+.Reviews {
+  /* debug */
+  height: 400px;
+  background-color: red
+}
+
+.Blog {
+  /* debug */
+  height: 400px;
+  background-color: GOLD;
+}
+
+footer {
+  /* debug */
+  height: 400px;
+  background-color: blue;
