@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -22,7 +22,7 @@ h6 {
 
 /* HEADER */
 header {
-  padding: 20px 0 ;
+  padding: 20px 0;
   background-image: url("../img/avadabarbers-homepage-hero-bg.jpg");
   background-size: cover;
   background-position: center;
@@ -55,33 +55,37 @@ nav img {
   width: 15px;
   border: 1px solid #b0b0b0;
 }
-.menuDropdown{
-    position: absolute;
-    width: 130px;
-    padding: 10px;
-    font-size: 1.2rem;
-    background: rgba(255, 255, 255, 0);
-    border: 1px solid #b0b0b0;
-    border-radius: 10px;
-    list-style: none;
-    top: 15px;
+
+.menuDropdown {
+  position: absolute;
+  width: 130px;
+  padding: 10px;
+  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid #b0b0b0;
+  border-radius: 10px;
+  list-style: none;
+  top: 15px;
 }
+
 .menuDropdown li {
-    padding: 5px;
+  padding: 5px;
 }
-.menuDropdown a{
-    color:  #818181;
-    width: 100px;
-    font-size: 1.2rem;
-    padding-left: 10px
+
+.menuDropdown a {
+  color: #818181;
+  width: 100px;
+  font-size: 1.2rem;
+  padding-left: 10px
 }
-.menuDropdown li:hover a{
-    transition: 0.2s;
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: 20px;
-    border-left: 2px solid #ae8652;
+
+.menuDropdown li:hover a {
+  transition: 0.2s;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 20px;
+  border-left: 2px solid #ae8652;
 }
 
 
@@ -153,130 +157,150 @@ nav img {
 .trentanove {
   font-size: 1.5rem;
 }
-.triangle{
-    margin-top: 100px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 1200px 200px 1200px;
-    border-color: transparent transparent #ffffff transparent;
+
+.triangle {
+  margin-top: 100px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 1200px 200px 1200px;
+  border-color: transparent transparent #ffffff transparent;
 }
 
 /* MAIN */
 main {
-  background-color:white
+  background-color: white
 }
 
-.Awards{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.Awards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
-    background-image: url("../img/avadabarbers-about-introbackground.jpg");
-}
-.container-awards{
-
-      margin-top: 25px;
+  background-image: url("../img/avadabarbers-about-introbackground.jpg");
 }
 
-.Awards p{
-    color: #ae8652;
-    text-transform: uppercase;
+.container-awards {
+
+  margin-top: 25px;
 }
 
-.Awards h2{
-    padding: 20px 0 30px 0;
-    font-size: 50px;
-    color: #b0b0b0;
+.Awards p {
+  color: #ae8652;
+  text-transform: uppercase;
+}
+
+.Awards h2 {
+  padding: 20px 0 30px 0;
+  font-size: 50px;
+  color: #b0b0b0;
 }
 
 .Services {
- margin: 0 20%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
 }
-body > main > section.Services > div.upper-text > span{
+
+body>main>section.Services>div.upper-text>span {
   color: #ae8652;
   font-weight: 600;
   font-size: 35px;
 }
 
-.Services h2{
+.Services h2 {
   color: #b0b0b0;
-    font-weight: 600;
-    font-size: 75px;
-}
-.Services p{
-  text-align: center;
-}
-.upper-text{
-    text-align: center;
-    padding: 0px 0 50px 0 ;
-}
-.container-services{
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 50px ;
-}
-.container-services img{
-    width: 100px;
-    max-height: 140px;
-}
-.barber-box, .box-service{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 250px;
+  font-weight: 600;
+  font-size: 75px;
 }
 
-.barber-box h3, .box-service h3{
-    padding: 25px 0;
-    font-size: 2.2rem;
-    color: #ae8652;
-    text-transform: capitalize;
+.Services p {
+  text-align: center;
 }
-.barber-box p{
-    text-align: center;
-    color: #818181;
+
+.upper-text {
+  text-align: center;
+  padding: 0px 0 50px 0;
 }
-#soap h3{
-    padding: 35px 0 25px 0 ;
+
+.container-services {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 50px;
 }
-.container-button_services{
-    text-align: center;
+
+.container-services img {
+  width: 100px;
+  max-height: 140px;
 }
-#triangle_black{
-     border-color: transparent transparent #141414 transparent;
+
+.barber-box,
+.box-service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 250px;
+}
+
+.barber-box h3,
+.box-service h3 {
+  padding: 25px 0;
+  font-size: 2.2rem;
+  color: #ae8652;
+  text-transform: capitalize;
+}
+
+.barber-box p {
+  text-align: center;
+  color: #818181;
+}
+
+#soap h3 {
+  padding: 35px 0 25px 0;
+}
+
+.container-button_services {
+  text-align: center;
+}
+
+.black {
+  border-color: transparent transparent #141414 transparent;
 }
 
 
 /* products */
-.Products{
-    text-align: center  ;
-    background-image: url("../img/avadabarbers-reviewsbackground.jpg");
-    background-size: cover;
-    background-position: top;
-                /* debug */
- 
-    border: 1px solid rgb(75, 250, 75);
-    height:   65vh;
+.Products {
+  text-align: center;
+  background-image: url("../img/avadabarbers-reviewsbackground.jpg");
+  background-size: cover;
+  background-position: top;
+  height: 65vh;
 }
-body > main > section.Products > div.upper-text > span{
-      color: #ae8652;
+
+body>main>section.Products>span{
+    color: #ae8652;
+    font-weight: 800;
 
 }
-.Products h2{
+
+.Products h2 {
   font-size: 50px;
-  color:#b0b0b0;
+  color: #b0b0b0;
 }
-.container-products{
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 60px;
+
+.container-products {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 60px;
 }
-.barber-box span{
-    font-size: 1.3rem;
-    color: #ae8652;
+
+.barber-box span {
+  font-size: 1.3rem;
+  color: #ae8652;
 }
 
 .Reviews {
