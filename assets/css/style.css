@@ -159,12 +159,12 @@ nav img {
 }
 
 .triangle {
-  margin-top: 100px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 1200px 200px 1200px;
-  border-color: transparent transparent #ffffff transparent;
+    margin-top: 100px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 49vw 100px 49vw;
+    border-color: transparent transparent #ffffff transparent;
 }
 
 /* MAIN */
@@ -206,16 +206,17 @@ main {
  text-align: center;
 }
 
-body>main>section.Services>div.upper-text>span {
+body>main>section.Services>div.upper-text>span,
+body>main>section.Reviews>div.upper-text-review>span {
   color: #ae8652;
   font-weight: 600;
   font-size: 35px;
 }
 
-.Services h2 {
+.Services h2, body>main>section.Reviews>div.upper-text-review>h2 {
   color: #b0b0b0;
   font-weight: 600;
-  font-size: 75px;
+  font-size: 65px;
 }
 
 .Services p {
@@ -303,9 +304,106 @@ body>main>section.Products>span{
   color: #ae8652;
 }
 
-.Reviews {
-  height: 400px;
-  background-color: red
+.Reviews{
+
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+    height: 75vh;
+    justify-content: center;
+}
+.userReview{
+        padding: 10px;
+        margin-top: 21%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+}
+
+
+.container_absolute {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: -40px;
+
+
+  border-top: 4px solid #ae8652;
+  background: #111110;
+}
+
+.bg-absolute {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-image: url("../img/avadabarbers-cta-background.jpg");
+  background-size: cover;
+}
+
+.bg-absolute img {
+  width: 300px;
+}
+
+.text-absolute {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 20px;
+}
+
+.text-absolute span {
+  color: #ae8652;
+  text-transform: uppercase;
+}
+
+.text-absolute h2 {
+  font-size: 5rem;
+  color: #b0b0b0;
+  text-transform: capitalize;
+}
+
+.text-absolute p {
+  padding: 20px 0 30px;
+  color: #818181;
+}
+.upper-text-review{
+  margin-top: 260px;
+  text-align: center;
+  position: absolute
+  ;
+}
+
+.text-review {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     max-width: 250px;
+  
+}
+
+.text-review p {
+  max-width: 200px;
+  color: #b0b0b0;
+  word-spacing: 5px;
+}
+
+.text-review img {
+  border-radius: 50%;
+  width: 100px;
+  margin: 20px 0 10px;
+}
+
+.text-review span {
+  color: #ae8652;
+  text-transform: capitalize;
+}
+.triangle-bottom {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 49vw 0 49vw;
+  border-color: #ffffff transparent transparent transparent;
 }
 
 .Blog {
