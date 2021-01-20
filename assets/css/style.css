@@ -461,3 +461,49 @@ body>main>section.Products>span {
   color: #b0b0b0;
 
 }
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 10% 50px;
+    background: #191817;
+}
+.shop,
+.contact,
+.appointment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.shop img,
+.appointment img{
+    width: 350px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.contact{
+    align-self: flex-start ;
+}
+.contact img {
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+.contact span{
+    padding: 5px;
+    color: #b0b0b0;
+    cursor: pointer;
+}
+.contact p{
+    padding: 30px;
+    font-size: 1.2rem;
+    color: #ae8652;
+    text-transform: uppercase;
+}
+.box-social{
+    display: flex;
+}
+.box-social  i{
+    padding: 5px;
+    font-size: 1.2rem;
+    color: #b0b0b0;
+}
