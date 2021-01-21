@@ -6,6 +6,10 @@
 
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   width: 100%;
   max-height: auto;
@@ -17,7 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lobster', cursive;
+  font-family: 'Abril Fatface', cursive;
 }
 
 /* HEADER */
