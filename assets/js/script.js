@@ -38,7 +38,7 @@ var app = new Vue ({
             {
                 nome: "contact",
                 poster:"./assets/img/avadabarbers-logo-x1.png",
-                title: "Avava Barbers",
+                title: "Avada Barbers",
                 address: "123 New York City",
                 city: "New York",
                 email: "info@yourwebsite.com",
@@ -49,4 +49,9 @@ var app = new Vue ({
         menuDropdown: ["Home", "Foto", "Prezzi", "Chi Siamo"],
         drop: false
     },
+      methods: {
+    scroll() {
+      window.scrollTo(0, 0);
+    },
+  },
 })

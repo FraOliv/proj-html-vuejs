@@ -311,7 +311,7 @@ body>main>section.Products>span {
 .container-products {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
 .barber-box span {
@@ -461,6 +461,19 @@ max-width: 252px;
   text-align: center;
   margin: 50px 22px 100px;
 }
+.container-img_blog:hover{
+   transition: 0.35s;
+      transform: scale(1.1); 
+      border: 3px solid #ae8652 ;
+ 
+
+}
+.barber-box:hover{
+   transition: 0.35s;
+      transform: scale(1.0); 
+      border: 1px solid #ae8652 ;
+
+}
 
 .blog .blog-img .container-img_blog h3 {
   padding: 10px 0;
@@ -526,4 +539,12 @@ footer{
   color: #b0b0b0;
   text-align: center;
   background-color: #353333;
+}
+
+.scrollUP{
+  color: white;
+  background-color: #626262;
+  position: absolute;
+  right: 2%;
+  padding: 0 3px;
 }
