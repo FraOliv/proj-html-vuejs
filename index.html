@@ -33,23 +33,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,100;1,300&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
 
 
   <title>Barbershop</title>
 </head>
 
 <body>
-  <header>
+  
     <div id="app">
-
-      <!--  Header  -->
-      <header>
-        <!-- navigation bar -->
+      <!-- navigation bar -->
+      <header v-for="(element, index) in header">
         <nav>
-          <img src="assets/img/avadabarbers-logo-x1.png" alt="logo">
+          <img :src="element.logo" alt="logo">
 
           <div class="shop-burger">
-            <i class="fas fa-shopping-cart"></i>
+            <i :class="element.shopping"></i>
 
             <div class="menu-hamburger" @click="drop = !drop">
               <div></div>
@@ -68,34 +70,34 @@
         <!-- jumbotron -->
         <section class="jumbo">
           <div class="jumbo-decription">
-            <h1>Barber Shop</h1>
+            <h1>{{element.title}}</h1>
             <div class="line"></div>
-            <p>The Pinnacle Of Male Grooming</p>
-            <span class="button">LEARN MORE</span>
+            <p>{{element.subtitle}}</p>
+            <span class="button">{{element.button}}</span>
           </div>
           <div class="container-jumbo">
-            <img src="assets/img/avadabarbers_hero_focalmirror-600x825.png" alt="">
+            <img :src="element.jumbo" alt="barber-and-client.png">
           </div>
 
           <div class="white_minibox">
             <div class="minibox">
-              <i class="fas fa-folder-plus"></i>
-              <span>Demos</span>
+              <i :class="element.folder"></i>
+              <span>{{element.demo}}</span>
             </div>
             <div class="minibox">
               <div class="price">
-                <span class="dollar">$</span><span class="trentanove"><strong>39</strong></span>
+                <span class="dollar">{{element.dollar}}</span><span
+                  class="trentanove"><strong>{{element.price}}</strong></span>
               </div>
-              <span>On Sale</span>
+              <span>{{element.sale}}</span>
             </div>
           </div>
         </section>
       </header>
-  </header>
 
 
   <!--  Main  -->
-  <main>
+<main>
     <!-- awards -->
     <section class="Awards">
       <div class="container-awards">
@@ -143,7 +145,7 @@
 
       <span>We have you covered</span>
       <h2>Avada Grooming Products</h2>
-      </div>
+    
       <div class="container-products">
         <div class="barber-box">
           <img src="assets/img/brush_dark-400x400.png" alt="">
@@ -228,61 +230,63 @@
         <div class="container-img_blog">
           <img src="assets/img/avadabarbers-second-blog-320x202.jpg" alt="">
           <h3>Avada Barbers now open</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque harum tempore unde, aliquam aspernatur
-            error iure doloremque quam architecto. Quis ut corrupti</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque harum tempore unde</p>
         </div>
         <div class="container-img_blog">
           <img src="assets/img/avadabarbers-choosing-blog-320x202.jpg" alt="">
           <h3>choosing the right barber</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque harum tempore unde, aliquam aspernatur
-            error iure doloremque quam architecto. Quis ut corrupti</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque harum tempore unde</p>
         </div>
         <div class="container-img_blog">
           <img src="assets/img/avadabarbers-ourservice-blog-320x202.jpg" alt="">
           <h3>quick service guide</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque harum tempore unde, aliquam aspernatur
-            error iure doloremque quam architecto. Quis ut corrupti</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque harum tempore unde</p>
         </div>
       </div>
       <span class="button"> read more for our blog</span>
     </section>
-    </div>
+  
     </section>
   </main>
 
 
   <!--  Footer -->
   <footer>
-  <div class="shop">
-                <img src="assets/img/avadabarbers_footer_shop_image-300x234.png" alt="">
-                <span id="button">shop our range now</span>
-            </div>
+    <div class="shop" v-for="item in shop">
+      <img :src="item.poster" alt="">
+      <span class="button">{{item.button}}</span>
+    </div>
 
-            <!-- contact -->
-            <div class="contact">
-               <img src="assets/img/avadabarbers-logo-x1.png" alt="">
-                <span>Avava Barbers</span>
-                <span>123 New York City</span>
-                <span>New York</span>
-                <span>info@yourwebsite.com</span>
-                <span>+1(555)555-1212</span>
-                <p>follow us</p>
-                <div class="box-social">
-                    <i class="fab fa-facebook-square"></i>
-                    <i class="fab fa-twitter-square"></i>
-                    <i class="fab fa-youtube"></i>
-                    <i class="fab fa-instagram"></i>
-                </div>
-            </div>
+    <!-- contact -->
+    <div class="contact" v-for = "item in contact">
+      <img :src="item.poster" alt="">
+      <span>{{item.title}}</span>
+      <span>{{item.address}}</span>
+      <span>{{item.city}}</span>
+      <span>{{item.email}}</span>
+      <span>{{item.phone}}</span>
+      <p>Follow us</p>
+      <div class="box-social">
+        <i v-for = "icon in socials" :class="icon"></i>
+      
+      </div>
+    </div>
 
-            <!-- appointment -->
-            <div class="appointment">
-                <img src="assets/img/avadabarbers-logo-x1.png" alt="">
-                <span class="button">book your appointment</span>
-            </div>
+    <!-- appointment -->
+    <div class="reservation" v-for = "prenotazione in reservation">
+      <img :src="prenotazione.poster" alt="">
+      <span class="button">{{prenotazione.button}}</span>
+    </div>
   </footer>
+
+<div class="copyright">
+  {{copyright}}
+</div>
+
+  <!--  Header  -->
+
   </div>
-  </div>
+
 
 
 

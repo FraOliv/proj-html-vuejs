@@ -113,13 +113,16 @@ nav img {
 
 .jumbo-decription p {
   padding: 20px 0 30px;
-  color: #505050
+  color: #505050;
+  text-transform: capitalize;
 }
 
 .button {
   padding: 10px 15px;
   color: #ae8652;
   border: 1px solid #ae8652;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .white_minibox {
@@ -206,15 +209,18 @@ main {
   text-align: center;
 }
 
-body>main>section.Services>div.upper-text>span,
-body>main>section.Reviews>div.upper-text-review>span {
+#app > main > section.Products > span:nth-child(1),
+#app > main > section.Services > div.upper-text > span,
+#app > main > section.Reviews > div.upper-text-review > span,
+#app > main > section.Reviews > div.container_absolute > div.text-absolute > span:nth-child(1) {
   color: #ae8652;
   font-weight: 600;
   font-size: 35px;
+      font-size: 18px;
 }
 
 .Services h2,
-body>main>section.Reviews>div.upper-text-review>h2 {
+#app > main > section.Reviews > div.upper-text-review > h2{
   color: #b0b0b0;
   font-weight: 600;
   font-size: 65px;
@@ -310,7 +316,7 @@ body>main>section.Products>span {
   position: relative;
   display: flex;
   justify-content: space-between;
-  height: 75vh;
+  height: 85vh;;
   justify-content: center;
 }
 
@@ -320,6 +326,7 @@ body>main>section.Products>span {
   display: flex;
   justify-content: center;
   text-align: center;
+  padding-left: 140px;
 }
 
 
@@ -354,10 +361,7 @@ body>main>section.Products>span {
   margin: 0 20px;
 }
 
-.text-absolute span {
-  color: #ae8652;
-  text-transform: uppercase;
-}
+
 
 .text-absolute h2 {
   font-size: 5rem;
@@ -371,7 +375,7 @@ body>main>section.Products>span {
 }
 
 .upper-text-review {
-  margin-top: 260px;
+  margin-top: 270px;
   text-align: center;
   position: absolute;
 }
@@ -380,7 +384,8 @@ body>main>section.Products>span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 250px;
+max-width: 252px;
+    margin-right: 120px;
 
 }
 
@@ -396,11 +401,11 @@ body>main>section.Products>span {
   margin: 20px 0 10px;
 }
 
+
 .text-review span {
   color: #ae8652;
   text-transform: capitalize;
 }
-
 .triangle-bottom {
   width: 0;
   height: 0;
@@ -446,7 +451,7 @@ body>main>section.Products>span {
 
 .blog .blog-img .container-img_blog {
   text-align: center;
-  margin: 50px 10px 100px;
+  margin: 50px 22px 100px;
 }
 
 .blog .blog-img .container-img_blog h3 {
@@ -470,13 +475,13 @@ footer{
 }
 .shop,
 .contact,
-.appointment{
+.reservation{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .shop img,
-.appointment img{
+.reservation img{
     width: 350px;
     margin-bottom: 30px;
     cursor: pointer;
@@ -506,4 +511,11 @@ footer{
     padding: 5px;
     font-size: 1.2rem;
     color: #b0b0b0;
+}
+
+.copyright{
+  padding: 40px;
+  color: #b0b0b0;
+  text-align: center;
+  background-color: #353333;
 }
