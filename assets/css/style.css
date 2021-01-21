@@ -117,13 +117,21 @@ nav img {
   text-transform: capitalize;
 }
 
-.button {
+.button, button {
   padding: 10px 15px;
   color: #ae8652;
   border: 1px solid #ae8652;
   text-transform: uppercase;
   font-weight: bold;
+    transition: transform 1s;
+     background-color: transparent
+    
 }
+.button:hover{
+   transform: scale(1.1); 
+ 
+}
+
 
 .white_minibox {
   display: flex;
